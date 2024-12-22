@@ -1,0 +1,299 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_UiElement" Type="OutArgument(ui:UiElement)" />
+    <x:Property Name="UserName" Type="InArgument(x:String)" />
+    <x:Property Name="Password" Type="InArgument(ss:SecureString)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Login_Process_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login_Process" sap:VirtualizedContainerService.HintSize="616.6666666666666,2204.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Chrome IRCTC Next Generation eTicketing Syste" sap:VirtualizedContainerService.HintSize="484,2182" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OutUiElement="[out_UiElement]" ScopeGuid="a994e1ca-92e0-4418-819b-117bfda3dc0b" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1900" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="otp_code" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Menu Button" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="846b6b8f-84c2-449e-9f90-91a35c053cff" DesignTimeRectangle="1851, 177, 46, 45" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" Guid="007e03fe-aea3-4e8e-afb6-a87261103176" InformativeScreenshot="66b1d618832d9fe488c9077d7536af6f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="846b6b8f-84c2-449e-9f90-91a35c053cff" CvElementArea="1672, 156, 84, 82" CvType="Icon" DesignTimeRectangle="1670, 154, 88, 86" ElementType="Icon" Guid="62b12e45-da59-4b5b-b68c-311c397f6b22" ImageBase64="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" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Login Button" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="bb9ba001-0096-4bdb-8240-81573d90c96e" ContentHash="NmFAEbD8O0iEnQoYo3iMiA" DesignTimeRectangle="1529, 183, 238, 54" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='LOGIN' parentid='slide-menu' /&gt;" Guid="0fe0c8e0-68fc-4999-84f0-bd381cbdd287" InformativeScreenshot="5ee8d93d580464f0d5fa7f4b9a4f7989.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/qLUaEjh_4kuXLPJvNDXvBg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bb9ba001-0096-4bdb-8240-81573d90c96e" DesignTimeRectangle="1609, 341, 197, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='IRCTC EXCLUSIVE' parentid='slide-menu' tag='SPAN' /&gt;" Guid="802942ad-689d-471b-a506-2d68452f2778" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBefore="2" DisplayName="Type Into UserName" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Text="[UserName]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="c068f1b8-a1ba-4d1b-be92-9f7aa70bfd7d" CvElementArea="220, 381, 454, 67" CvType="InputBox" DesignTimeRectangle="224, 384, 447, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' parentclass='form-group form-sd ui-inputgroup' placeholder='User Name' type='text' /&gt;" Guid="d0e6f1b6-7798-4c8d-a726-78b55a022c55" InformativeScreenshot="e643737d409f377b472376d7a55724fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c068f1b8-a1ba-4d1b-be92-9f7aa70bfd7d" CvTextArea="387, 284, 121, 33" CvTextArgument="LOGIN" CvType="Text" DesignTimeRectangle="389, 276, 121, 47" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exampleModalLabel' tag='STRONG' type='' class='' aaname='LOGIN' check:innerText='LOGIN' /&gt;" Guid="da72cf2c-3e1e-4454-88ff-d5f2f3ed9edf" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="10" DisplayName="Type Into Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" SecureText="[Password]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="4c21e121-3711-4e59-ac96-7570aaea1fe6" DesignTimeRectangle="224, 447, 447, 60" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' parentclass='form-group form-sd ui-inputgroup' placeholder='Password' type='password' /&gt;" Guid="4194c1d4-e693-450b-b0de-e348a12f898f" InformativeScreenshot="dc9489f8bf3382a3d574d3e8cba50ffd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="4c21e121-3711-4e59-ac96-7570aaea1fe6" DesignTimeRectangle="224, 516, 253, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='login_header_disable' tag='STRONG' /&gt;" Guid="d5f691ff-a729-43bd-93c9-0489f3acb557" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Captcha" Title="Captcha">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[otp_code]</OutArgument>
+              </ui:InputDialog.Result>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InputDialog>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'CAPTCHA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Text="[otp_code]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="b089b1a4-3dd0-49e6-9ad8-3b7d10fb6bdc" ContentHash="QBkltnXv7kiO1ULDnY3YCQ" DesignTimeRectangle="224, 675, 450, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' parentclass='form-group' placeholder='Enter Captcha' type='text' /&gt;" Guid="d9581332-eb15-4ffb-9b28-f7551781f464" InformativeScreenshot="dbe1030729ff55cb63fcb08d8c670f10.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/kJIUxKaAjUmeV_OXEb0lLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b089b1a4-3dd0-49e6-9ad8-3b7d10fb6bdc" DesignTimeRectangle="224, 788, 307, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Login &amp;amp; Booking With OTP' parentid='login_header_disable' tag='LABEL' type='' class='css-label_c t_c' check:innerText='Login &amp;amp; Booking With OTP' /&gt;" Guid="568df54b-c02f-450e-ae3a-0dc9edd6a35d" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SIGN IN'" sap:VirtualizedContainerService.HintSize="416,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="5d307187-7e85-47c8-bb4f-3c75afbd7062" ContentHash="toJXQjWs3UmtSrCMfM8_4A" DesignTimeRectangle="213, 622, 450, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='login_header_disable' tag='BUTTON' type='submit' class='search_btn train_Search' innertext='SIGN IN' /&gt;" Guid="efbfc636-2fbd-4d96-9ca5-0e2c0d119b18" InformativeScreenshot="b2b8c0723baaf6234735b450502115fe.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/HDkTsJT-BUqysuvieuX4_A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5d307187-7e85-47c8-bb4f-3c75afbd7062" DesignTimeRectangle="213, 569, 307, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Login &amp;amp; Booking With OTP' parentid='login_header_disable' tag='LABEL' /&gt;" Guid="c897f17c-b36b-4f1b-b37c-6191346dfe86" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="-ogDTZvGQEWx-NeUy9mjbg" IconBase64="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" InformativeScreenshot="3e2fdff07071d611a2629db5691fc5ff.jpg" Reference="gE_DwN4ZfU2KnPAUDje_kw/JZa3EmNWc0a7QcWQysLncg" Selector="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" Title="IRCTC Next Generation eTicketing System" Url="https://www.irctc.co.in/nget/train-search" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nwQtDvbRbkmUUCi8lPLrwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="irctc.co.in/nget/booking/psgninput" CVScreenId="cd2a610d-452f-4e13-a97d-cd5411fc1b37" CvElementArea="468, 614, 203, 63" CvType="InputBox" DesignTimeRectangle="470, 616, 199, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='GenderMaleFemaleTransgender' /&gt;&lt;webctrl tag='SELECT' /&gt;" Guid="ee70ac94-de6b-4ab2-b6b2-b1850a28204f" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cd2a610d-452f-4e13-a97d-cd5411fc1b37" DesignTimeRectangle="57, 543, 1230, 43" FullSelectorArgument="&lt;webctrl class='ui-helper-clearfix' css-selector='body&amp;gt;app-root&amp;gt;app-home&amp;gt;div&amp;gt;div&amp;gt;app-passenger-input&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-panel&amp;gt;div&amp;gt;div&amp;gt;p-header&amp;gt;div' idx='2' tag='DIV' /&gt;" Guid="c0e6f50c-6fde-4ece-b44e-a33e459e7446" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d9de0797db542e6e7310097328c22d86.png" xmlns="">0Fc0MiPoZ4UKNT6wn4GfWCw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

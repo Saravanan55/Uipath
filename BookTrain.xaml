@@ -1,0 +1,305 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetTrainDetail" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_BookTrainBrowser" Type="InArgument(ui:UiElement)" />
+  </x:Members>
+  <this:GetTrainDetail.in_BookTrainBrowser>
+    <InArgument x:TypeArguments="ui:UiElement" />
+  </this:GetTrainDetail.in_BookTrainBrowser>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>GetTrainDetail_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetTrainDetail" sap:VirtualizedContainerService.HintSize="925.9999999999999,2728.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="588.6666666666666,2706" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_BookTrainBrowser]" OpenMode="Never" ScopeGuid="2704e82f-abda-4a09-986e-2d399fe4906d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="554.6666666666666,2544" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520.6666666666666,2481.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="OutArgument" Name="text" />
+                <Variable x:TypeArguments="x:String" Name="ke" />
+                <Variable x:TypeArguments="x:String" Name="captcha_text" />
+                <Variable x:TypeArguments="x:String" Name="CaptchaValue" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Passenger Details'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" Text="Saravanan" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/psgninput" CVScreenId="d0b59bf0-ed9c-42bc-926f-d4ed05f63958" ContentHash="RcCi--tCmUCWgyBcjRgPiA" CvElementArea="58, 615, 305, 64" CvType="InputBox" DesignTimeRectangle="60, 616, 301, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' aria-role='searchbox' placeholder='Name' /&gt;" Guid="2b1e1e44-2cae-4e20-a003-5b4649c7f9d4" InformativeScreenshot="2025551987ddde7fa6c64d6a1e0a2026.png" IsResponsive="True" Reference="gE_DwN4ZfU2KnPAUDje_kw/uocgkLWFyEC8r2Gzt_tiqQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="d0b59bf0-ed9c-42bc-926f-d4ed05f63958" DesignTimeRectangle="57, 527, 267, 74" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Passenger Details' tag='SPAN' /&gt;" Guid="3951dd80-7d3c-42d3-bdf7-bf7df94d7566" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Passenger Details'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" Text="30" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/psgninput" CVScreenId="c9023c90-8657-4a96-a778-0cb3f08c6f0c" ContentHash="PMtmzEH0D0eY7pwVShTWTA" DesignTimeRectangle="367, 616, 97, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' placeholder='Age' /&gt;" Guid="5c9670e9-6804-49a8-9a40-a51598d98385" InformativeScreenshot="7027cb655a51e403b62db66d07fc5b13.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/UI-dK9qthEKhtfAKVeK9Gw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="c9023c90-8657-4a96-a778-0cb3f08c6f0c" DesignTimeRectangle="57, 527, 267, 74" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Passenger Details' tag='SPAN' /&gt;" Guid="07887c6b-2e84-4438-9185-aec188744b8f" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NSelectItem DisplayName="Select Item 'Passenger Details'" sap:VirtualizedContainerService.HintSize="486.6666666666667,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Male" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="4">
+                    <x:String>Gender</x:String>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                    <x:String>Transgender</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/psgninput" CVScreenId="cd2a610d-452f-4e13-a97d-cd5411fc1b37" ContentHash="nwQtDvbRbkmUUCi8lPLrwA" CvElementArea="468, 614, 203, 63" CvType="InputBox" DesignTimeRectangle="470, 616, 199, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='GenderMaleFemaleTransgender' /&gt;&lt;webctrl tag='SELECT' /&gt;" Guid="ee70ac94-de6b-4ab2-b6b2-b1850a28204f" ImageBase64="" InformativeScreenshot="d9de0797db542e6e7310097328c22d86.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/AABFQTY2gkGLx8NM_xym_Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="cd2a610d-452f-4e13-a97d-cd5411fc1b37" DesignTimeRectangle="57, 543, 1230, 43" FullSelectorArgument="&lt;webctrl class='ui-helper-clearfix' css-selector='body&amp;gt;app-root&amp;gt;app-home&amp;gt;div&amp;gt;div&amp;gt;app-passenger-input&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-panel&amp;gt;div&amp;gt;div&amp;gt;p-header&amp;gt;div' idx='2' tag='DIV' /&gt;" Guid="c0e6f50c-6fde-4ece-b44e-a33e459e7446" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="10" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="486.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/psgninput" CVScreenId="ca61896d-de94-4ad7-877e-98edc114febd" ContentHash="EgnFq5HmpECYw5NuAXXVVw" CvElementArea="153, 745, 133, 68" CvTextArea="168, 767, 102, 22" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="155, 746, 130, 64" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' innertext='Continue ' idx='1' /&gt;" Guid="fcd74b82-bffb-401a-9a2d-0a774cd51dfa" InformativeScreenshot="d4b7613ee777396a42829ca0d8475cf7.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/jWyWBDTCVUuHXkfW3Ybr4w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="ca61896d-de94-4ad7-877e-98edc114febd" DesignTimeRectangle="61, 746, 85, 64" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='psgn-form' tag='BUTTON' innertext='Back' /&gt;" Guid="b3c782c9-5e98-4762-942e-331c15d92ca7" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,596.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,484.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="416,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" ScrapingMethod="Fulltext" TextString="[captcha_text]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/reviewBooking" CVScreenId="069019db-42ad-48e1-b7c7-ac2f59e75c4d" ContentHash="6LTYS3gzg0SuzGmwxkZrqQ" CvTextArea="612, 725, 133, 45" CvType="AnyWordGroup" DesignTimeRectangle="503, 712, 450, 68" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl class='captcha_div' parentid='review' tag='DIV' /&gt;" Guid="4c9887eb-90f9-4f57-ab51-5214ed2f0c6b" ImageBase64="" InformativeScreenshot="3e54a07384e33313ec361c3ca57695be.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/BAXr8CSD0E2xiUISA9sDIw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="069019db-42ad-48e1-b7c7-ac2f59e75c4d" DesignTimeRectangle="503, 778, 450, 72" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' placeholder='Enter Captcha' type='text' /&gt;" Guid="e6ce9205-9307-4e8d-ae76-422bca83a145" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[captcha_text]" />
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[captcha_text]" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="486.6666666666667,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Captcha Code" Title="Captcha">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">[CaptchaValue]</OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT captcha'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" Text="[CaptchaValue]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/reviewBooking" CVScreenId="9b99e44e-5fbb-47e0-b81d-0ffb9773b5a0" ContentHash="ku_LFHB-_Ee8t8fJ6qkzlA" DesignTimeRectangle="503, 778, 450, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' placeholder='Enter Captcha' type='text' /&gt;" Guid="844e50e0-8201-4314-907f-cc448cf617fd" InformativeScreenshot="84c653388445c4d60a7725167179be8d.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/I8F-zMLMIkmWr1NyunCxQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue(1)'" sap:VirtualizedContainerService.HintSize="486.6666666666667,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2704e82f-abda-4a09-986e-2d399fe4906d" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/reviewBooking" CVScreenId="9ebb4e15-d629-428f-b0c0-ec57c2a3786d" ContentHash="tO7cqtR9WkaHrl3M-Fbx2w" DesignTimeRectangle="155, 588, 130, 64" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' innertext='Continue ' visibleinnertext='Continue' /&gt;" Guid="3419d2f0-facf-4f30-84bc-2ce88984f6a5" InformativeScreenshot="57b064aefd0b74e7c151d875389afe48.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/NnbCDnqBS0ex_2U4mMIgfg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

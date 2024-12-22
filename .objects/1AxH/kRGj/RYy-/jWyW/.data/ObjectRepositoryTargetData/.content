@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EgnFq5HmpECYw5NuAXXVVw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="irctc.co.in/nget/booking/psgninput" CVScreenId="ca61896d-de94-4ad7-877e-98edc114febd" CvElementArea="153, 745, 133, 68" CvTextArea="168, 767, 102, 22" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="155, 746, 130, 64" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' innertext='Continue ' idx='1' /&gt;" Guid="fcd74b82-bffb-401a-9a2d-0a774cd51dfa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ca61896d-de94-4ad7-877e-98edc114febd" DesignTimeRectangle="61, 746, 85, 64" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='psgn-form' tag='BUTTON' innertext='Back' /&gt;" Guid="b3c782c9-5e98-4762-942e-331c15d92ca7" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d4b7613ee777396a42829ca0d8475cf7.png" xmlns="">06ctmeJf2rEqjWoH_CSLwmQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Passenger Details(1)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "AABFQTY2gkGLx8NM_xym_Q",
+  "Reference": "gE_DwN4ZfU2KnPAUDje_kw/AABFQTY2gkGLx8NM_xym_Q",
+  "ParentRef": "gE_DwN4ZfU2KnPAUDje_kw/RYy-NMPJ1U-u80MZrgfb-w",
+  "Created": "2024-12-22T15:15:27.4368507Z",
+  "Updated": "2024-12-22T15:15:27.4368507Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
