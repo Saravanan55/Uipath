@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="tO7cqtR9WkaHrl3M-Fbx2w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="irctc.co.in/nget/booking/reviewBooking" CVScreenId="9ebb4e15-d629-428f-b0c0-ec57c2a3786d" DesignTimeRectangle="155, 588, 130, 64" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' innertext='Continue ' visibleinnertext='Continue' /&gt;" Guid="3419d2f0-facf-4f30-84bc-2ce88984f6a5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="57b064aefd0b74e7c151d875389afe48.png" xmlns="">0Nui7tF42qE6H88KlHTVyig</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

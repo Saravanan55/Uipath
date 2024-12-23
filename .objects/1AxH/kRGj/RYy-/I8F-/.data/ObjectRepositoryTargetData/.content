@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="ku_LFHB-_Ee8t8fJ6qkzlA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="irctc.co.in/nget/booking/reviewBooking" CVScreenId="9b99e44e-5fbb-47e0-b81d-0ffb9773b5a0" DesignTimeRectangle="503, 778, 450, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' placeholder='Enter Captcha' type='text' /&gt;" Guid="844e50e0-8201-4314-907f-cc448cf617fd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="84c653388445c4d60a7725167179be8d.png" xmlns="">0irVRNLJuNEGvCoh3_ZcJng</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">TypeInto</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

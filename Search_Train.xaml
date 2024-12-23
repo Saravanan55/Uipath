@@ -104,31 +104,36 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Train_Details" sap:VirtualizedContainerService.HintSize="925.9999999999999,467.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Train_Details" sap:VirtualizedContainerService.HintSize="922.6666666666666,940.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,444.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_UiBroswer]" OpenMode="Never" OutUiElement="[out_TrainDetailsBrowser]" ScopeGuid="cdece2c1-f93b-4d98-a016-7cc7eeaccaf6" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,918" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_UiBroswer]" OpenMode="Never" OutUiElement="[out_TrainDetailsBrowser]" ScopeGuid="cdece2c1-f93b-4d98-a016-7cc7eeaccaf6" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,282.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,756" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="2" DisplayName="Private: Type Into 'BOOK TICKET'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="cdece2c1-f93b-4d98-a016-7cc7eeaccaf6" Text="COIMBATORE JN - CBE (COIMBATORE)" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="2" DisplayName="Private: Type Into 'BOOK TICKET'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="cdece2c1-f93b-4d98-a016-7cc7eeaccaf6" Text="COIMBATORE JN - CBE (COIMBATORE)" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="2d03a1b7-cb2f-4199-a2bc-89fb94494e37" ContentHash="IzUpA-qRLECSF23ulINgDw" CvTextArea="236, 591, 51, 19" CvTextArgument="From" CvType="Text" DesignTimeRectangle="184, 650, 398, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' aria-role='searchbox' idx='1' /&gt;" Guid="e98d096b-0c68-4d56-8afe-f1cfc2d64b42" InformativeScreenshot="da6adf28779483cb9a461f0a840bff6a.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/LlUlBjy8kUOMFN4zCoIqqQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="383, 503, 316, 123" ElementType="Text" FullSelectorArgument="&lt;webctrl class='heading-font' parentid='divMain' tag='LABEL' /&gt;" Guid="109426b2-f19f-4e89-8535-5bd433a2e15a" SearchSteps="Selector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -146,16 +151,16 @@
               </uix:NTypeInto.VerifyOptions>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'BOOK TICKET'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="cdece2c1-f93b-4d98-a016-7cc7eeaccaf6" Text="CHENNAI EGMORE - MS (CHENNAI)" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'BOOK TICKET'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="cdece2c1-f93b-4d98-a016-7cc7eeaccaf6" Text="CHENNAI EGMORE - MS (CHENNAI)" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="f4286f21-e0b6-46f8-9b6c-6e93cc2777e1" ContentHash="3maFQ5jTIEqA903jVlyFuA" DesignTimeRectangle="184, 455, 398, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='destination' tag='INPUT' type='text' /&gt;" Guid="300fcef9-b579-4a93-914c-7feb7cf865c8" InformativeScreenshot="fd2631cd43a4cc8682c1ca1efdc1378e.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/NNu23Pq93UuBDJ3Gi_2zcQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="f4286f21-e0b6-46f8-9b6c-6e93cc2777e1" CvTextArea="383, 245, 317, 39" CvTextArgument="BOOK TICKET" CvType="Text" DesignTimeRectangle="383, 203, 316, 123" ElementType="Text" FullSelectorArgument="&lt;webctrl class='heading-font' parentid='divMain' tag='LABEL' /&gt;" Guid="89cbcaca-31af-4d1b-a24d-7b91ca61cec6" SearchSteps="Selector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -173,7 +178,7 @@
               </uix:NTypeInto.VerifyOptions>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -200,7 +205,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="eb45ca60-1481-4dd8-804e-b66d8f201c69" ContentHash="qLze0UqRRUK9gKCTVku4BQ" DesignTimeRectangle="604, 455, 272, 58" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='journeyClass' tag='DIV' /&gt;" Guid="11d86c34-cd0d-48df-8002-b78b0e18e552" ImageBase64="" InformativeScreenshot="589e98075ebea95d999e40048e65f582.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/eFz7kisLH0KRbIEecs-izg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="eb45ca60-1481-4dd8-804e-b66d8f201c69" CvElementArea="590, 661, 33, 32" CvTextArea="632, 668, 179, 19" CvTextArgument="Flexible With Date" CvType="CheckBox" DesignTimeRectangle="571, 664, 256, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Flexible With Date' parentid='divMain' tag='LABEL' /&gt;" Guid="d6de1798-fafb-4e24-9a93-ce1b02dd66da" SearchSteps="Selector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -217,7 +222,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="280e260b-764b-43ed-9b0b-1d63f79a54ef" ContentHash="A3ukxqL7UEW-AHqGbanA8A" DesignTimeRectangle="161, 881, 145, 54" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='divMain' tag='DIV' innertext='Search' /&gt;&lt;webctrl tag='BUTTON' /&gt;" Guid="80a89e3a-7d5e-442d-a788-00916aa4470c" InformativeScreenshot="f7d352217a925ac5d6b66af286ab7455.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/IPtwaNdkZUCijsGdPRH5Zw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="280e260b-764b-43ed-9b0b-1d63f79a54ef" DesignTimeRectangle="555, 881, 321, 54" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' innertext='Easy Booking on AskDISHA' /&gt;" Guid="4c8ee281-991c-4559-8a3c-173aa463e380" SearchSteps="Selector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
