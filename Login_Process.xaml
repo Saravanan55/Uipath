@@ -127,7 +127,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login_Process" sap:VirtualizedContainerService.HintSize="1058,3402.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_Process" sap:VirtualizedContainerService.HintSize="1058,3415.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="LoginErrorMsg" />
     </Sequence.Variables>
@@ -136,13 +136,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard CloseMode="Never" DisplayName="Chrome IRCTC Next Generation eTicketing Syste" sap:VirtualizedContainerService.HintSize="1058,3380" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OutUiElement="[out_UiElement]" ScopeGuid="a994e1ca-92e0-4418-819b-117bfda3dc0b" WindowResize="Maximize">
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Chrome IRCTC Next Generation eTicketing Syste" sap:VirtualizedContainerService.HintSize="1058,3392.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OutUiElement="[out_UiElement]" ScopeGuid="a994e1ca-92e0-4418-819b-117bfda3dc0b" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1024,3138.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1024,3150.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="otp_code" />
             </Sequence.Variables>
@@ -152,7 +152,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Menu Button" sap:VirtualizedContainerService.HintSize="990,228" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Menu Button" sap:VirtualizedContainerService.HintSize="990,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="846b6b8f-84c2-449e-9f90-91a35c053cff" DesignTimeRectangle="1851, 177, 46, 45" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" Guid="007e03fe-aea3-4e8e-afb6-a87261103176" InformativeScreenshot="66b1d618832d9fe488c9077d7536af6f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -173,7 +173,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Login Button" sap:VirtualizedContainerService.HintSize="990,228" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Login Button" sap:VirtualizedContainerService.HintSize="990,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="bb9ba001-0096-4bdb-8240-81573d90c96e" ContentHash="NmFAEbD8O0iEnQoYo3iMiA" DesignTimeRectangle="1529, 183, 238, 54" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='LOGIN' parentid='slide-menu' /&gt;" Guid="0fe0c8e0-68fc-4999-84f0-bd381cbdd287" InformativeScreenshot="5ee8d93d580464f0d5fa7f4b9a4f7989.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/qLUaEjh_4kuXLPJvNDXvBg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -194,7 +194,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBefore="2" DisplayName="Type Into UserName" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="990,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Text="[UserName]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBefore="2" DisplayName="Type Into UserName" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="990,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" Text="[UserName]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="c068f1b8-a1ba-4d1b-be92-9f7aa70bfd7d" CvElementArea="220, 381, 454, 67" CvType="InputBox" DesignTimeRectangle="224, 384, 447, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' parentclass='form-group form-sd ui-inputgroup' placeholder='User Name' type='text' /&gt;" Guid="d0e6f1b6-7798-4c8d-a726-78b55a022c55" InformativeScreenshot="e643737d409f377b472376d7a55724fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -221,7 +221,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="10" DisplayName="Type Into Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="990,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" SecureText="[Password]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="3" DisplayName="Type Into Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="990,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="a994e1ca-92e0-4418-819b-117bfda3dc0b" SecureText="[Password]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="4c21e121-3711-4e59-ac96-7570aaea1fe6" DesignTimeRectangle="224, 447, 447, 60" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' parentclass='form-group form-sd ui-inputgroup' placeholder='Password' type='password' /&gt;" Guid="4194c1d4-e693-450b-b0de-e348a12f898f" InformativeScreenshot="dc9489f8bf3382a3d574d3e8cba50ffd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -242,7 +242,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="990,275.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Captcha" Title="Captcha">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="990,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Captcha" Title="Captcha">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[otp_code]</OutArgument>
               </ui:InputDialog.Result>
@@ -348,7 +348,7 @@
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="762bde96-8dfe-44cf-ad08-e4122789aad5" ContentHash="zGrFamx_gkCbUiyKN7EMdw" CvTextArea="371, 285, 154, 19" CvType="AnyWordGroup" DesignTimeRectangle="224, 280, 450, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='loginError' parentid='login_header_disable' tag='DIV' /&gt;" Guid="1e60a3ea-8fd3-4ea8-85fa-52369dd6c358" ImageBase64="" InformativeScreenshot="512008c3d65bfc1be60869722c0721bd.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/H1WaUyWaykiHNT3WQ1L4WA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="762bde96-8dfe-44cf-ad08-e4122789aad5" DesignTimeRectangle="388, 198, 123, 59" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-home&amp;gt;div&amp;gt;app-login&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='login_header_disable' tag='DIV' /&gt;" Guid="84e7cab8-ea67-4838-b65b-2b03821479ef" SearchSteps="Selector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -386,7 +386,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/train-search" CVScreenId="ae8fcdcb-a9a8-4481-823a-635bc5f2d893" ContentHash="wyV9xw59JEqX3Y4HFyrwzg" DesignTimeRectangle="116, 365, 398, 54" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Refund Status' parentid='divMain' tabindex='0' tag='A' innertext='Refund Status' visibleinnertext='Refund Status' idx='1' /&gt;&lt;webctrl aaname='Refund Status' parentid='divMain' tag='LABEL' /&gt;" Guid="545a66fc-24c0-4057-a269-f0129481db04" InformativeScreenshot="cf9fcfebff4352019e6e256dbec8915e.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/XF46AqM1BUOUA4wgRonM4Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="ae8fcdcb-a9a8-4481-823a-635bc5f2d893" DesignTimeRectangle="360, 425, 316, 123" ElementType="Text" FullSelectorArgument="&lt;webctrl class='heading-font' parentid='divMain' tag='LABEL' /&gt;" Guid="3793ff99-32a5-49a5-adfe-0183064a13f4" SearchSteps="Selector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>

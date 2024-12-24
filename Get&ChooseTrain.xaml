@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestingFile" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestingFile" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_TrainBrowser" Type="InArgument(ui:UiElement)" />
     <x:Property Name="out_TrainBrowser" Type="OutArgument(ui:UiElement)" />
@@ -136,27 +136,23 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestingFile" sap:VirtualizedContainerService.HintSize="925.9999999999999,1010" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestingFile" sap:VirtualizedContainerService.HintSize="922.6666666666666,1358" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="mail_status_code" />
-      <Variable x:TypeArguments="x:Int32" Name="train_index">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="train_index" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome IRCTC Next Generation eTicketing Syste" sap:VirtualizedContainerService.HintSize="518,987.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_TrainBrowser]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[out_TrainBrowser]" ScopeGuid="ba49377a-de45-44b1-8200-a31af9c9c0d0" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome IRCTC Next Generation eTicketing Syste" sap:VirtualizedContainerService.HintSize="518,1335.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_TrainBrowser]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[out_TrainBrowser]" ScopeGuid="ba49377a-de45-44b1-8200-a31af9c9c0d0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="484,825.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence sap:VirtualizedContainerService.HintSize="484,1173.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="attach_path" />
             </Sequence.Variables>
@@ -166,7 +162,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,714.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1060" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="extract_table" />
                 <Variable x:TypeArguments="x:String" Name="outputText" />
@@ -196,7 +192,7 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,754.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,757.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="available_seats_count" />
                       </Sequence.Variables>
@@ -299,7 +295,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[train_index]</OutArgument>
                         </Assign.To>
@@ -334,11 +330,11 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NForEachUiElement>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="416,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba49377a-de45-44b1-8200-a31af9c9c0d0" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba49377a-de45-44b1-8200-a31af9c9c0d0" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="irctc.co.in/nget/booking/train-list" CVScreenId="21c3f121-1b7d-41f8-a7b8-81287f594390" ContentHash="DgRvbSgE8kOXva49csN89g" DesignTimeRectangle="839, 645, 124, 33" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Yes' parentid='divMain' tag='SPAN' /&gt;" Guid="2e85af7e-70dd-481d-87a9-87ae459ec42b" InformativeScreenshot="fdf3472c093507658c2f92fd787e92d4.png" Reference="gE_DwN4ZfU2KnPAUDje_kw/a4AvsfZjQ0m2-42zwpzaXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="21c3f121-1b7d-41f8-a7b8-81287f594390" DesignTimeRectangle="480, 483, 156, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='divMain' tag='SPAN' /&gt;" Guid="cd134505-4a82-40cd-8ef1-86853529269c" SearchSteps="Selector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -355,8 +351,44 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" Files="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachments="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Builder" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&lt;CODE&gt;Hi, &lt;/CODE&gt;&lt;/SPAN&gt;&lt;BR/&gt;&lt;SPAN&gt;&lt;CODE&gt;Attached train details report.&lt;/CODE&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="c25c347f-b49c-48fa-9f7b-c9ab9978d34c" DisplayName="Send SMTP Email" EnableSSL="True" From="saravanangovindharaj05@gmail.com" sap:VirtualizedContainerService.HintSize="416,338.6666666666667" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="Saravanan" Result="[mail_status_code]" SecureConnection="Auto" Subject="Train Details" TimeoutMS="50000" To="saravanangovindharaj05@gmail.com" UseISConnection="True">
+                <ui:SendMail.AttachmentsBackup>
+                  <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Builder">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                        <x:Null />
+                      </scg:List>
+                      <scg:List x:TypeArguments="x:Object" x:Key="Builder" Capacity="1">
+                        <x:Reference>__ReferenceID0</x:Reference>
+                      </scg:List>
+                      <scg:List x:TypeArguments="x:Object" x:Key="FilePaths" Capacity="2">
+                        <x:Null />
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                      </scg:List>
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </ui:SendMail.AttachmentsBackup>
+                <ui:SendMail.ConnectionDetailsBackupSlot>
+                  <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </ui:SendMail.ConnectionDetailsBackupSlot>
+                <ui:SendMail.ResourceAttachmentList>
+                  <scg:List x:TypeArguments="InArgument(upr:IResource)" x:Name="__ReferenceID0" Capacity="4">
+                    <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\saravang\\OneDrive - Cegeka\\Documents\\Uipath\\TrainDetails.xlsx")]</InArgument>
+                  </scg:List>
+                </ui:SendMail.ResourceAttachmentList>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:SendMail>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,50.666666666666664" sap2010:WorkflowViewState.IdRef="CommentOut_6">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,165.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
